@@ -1,0 +1,4 @@
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\bin\Debug\TestingApp.Models.dll
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\bin\Debug\TestingApp.Models.pdb
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\obj\Debug\TestingApp.Models.dll
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\obj\Debug\TestingApp.Models.pdb
