@@ -176,11 +176,16 @@
     <Content Include="template\css\new-age.css" />
     <Content Include="template\css\new-age.min.css" />
     <Content Include="template\gulpfile.js" />
+    <Content Include="template\img\404_page_cover.jpg" />
+    <Content Include="template\img\action.jpg" />
     <Content Include="template\img\app-store-badge.svg" />
     <Content Include="template\img\bg-cta.jpg" />
     <Content Include="template\img\bg-pattern.png" />
     <Content Include="template\img\demo-screen-1.jpg" />
     <Content Include="template\img\google-play-badge.svg" />
+    <Content Include="template\img\idea.png" />
+    <Content Include="template\img\people.png" />
+    <Content Include="template\img\proces.jpg" />
     <Content Include="template\index.html" />
     <Content Include="template\js\new-age.js" />
     <Content Include="template\js\new-age.min.js" />
@@ -350,6 +355,11 @@
     <Content Include="template\package.json" />
     <Content Include="template\README.md" />
     <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Test\Style1.cshtml" />
+    <Content Include="Views\Test\Style2.cshtml" />
+    <Content Include="Views\Test\Style3.cshtml" />
+    <Content Include="Views\Test\Style4.cshtml" />
+    <Content Include="Views\Test\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestingApp.Models\TestingApp.Models.csproj">
