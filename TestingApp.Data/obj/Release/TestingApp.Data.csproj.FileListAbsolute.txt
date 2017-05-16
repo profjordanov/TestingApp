@@ -1,0 +1,12 @@
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\TestingApp.Data.dll.config
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\TestingApp.Data.dll
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\TestingApp.Data.pdb
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\EntityFramework.dll
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\TestingApp.Models.dll
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\TestingApp.Models.pdb
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\EntityFramework.xml
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\obj\Release\TestingApp.Data.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\obj\Release\TestingApp.Data.dll
+C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Data\obj\Release\TestingApp.Data.pdb
