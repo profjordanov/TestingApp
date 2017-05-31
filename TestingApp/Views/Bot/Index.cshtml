@@ -1,0 +1,43 @@
+﻿@model TestingApp.Models.BotButtonCounter
+@{
+    ViewBag.Title = "Interview";
+}
+@using (Html.BeginForm("Index", "Bot", FormMethod.Post))
+{
+    <section class="cta" style="padding-top: 100px; padding-bottom: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="feature-item">
+                                <h3>Пробно интервю</h3>
+                                <p class="text-muted" style="alignment: left">И тъй като знаем колко е важно човек да е спокоен по време на интервюто за работа, за да може да покаже своя потенциал, тук можеш да тестваш своите умения за явяване на интервю с нашия чатбот. Той ще ти задава въпросите, които би получил на истинско интервю, като по този начин ти ще придобиеш увереност в своите възможности и ще елиминираш притесненията си. Интервюто продължава средно 30мин.</p>
+                                <br />
+                                <br />
+                                <a href="/Bot/Bot" class="btn btn-primary btn-lg" onclick="document.forms[0].submit();return true;">Кликни за чат!</a>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+

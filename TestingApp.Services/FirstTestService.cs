@@ -13,8 +13,6 @@ namespace TestingApp.Services
             _test = Mapper.Map<FirstTestBM, FirstTest>(bind);
             this.Context.FirstTests.Add(_test);
             this.Context.SaveChanges();
-
-            
         }
 
         public string Calculator()
@@ -347,6 +345,11 @@ namespace TestingApp.Services
                 style4++;
             }
 
+            if (style1 == 0 || style2 == 0 || style3 == 0 || style4 == 0)
+            {
+                result = "again";
+            }
+
             if (style1 >= style2 && style1 >= style3 && style1>=style4)
             {
                 result = "style1";
@@ -364,6 +367,28 @@ namespace TestingApp.Services
                 result = "style4";
             }
             return result;
+        }
+
+        public void AddCounter(int modelClickCount)
+        {
+            ApplyButtonCounter model = new ApplyButtonCounter()
+            {
+                ClickCount = modelClickCount
+            };
+
+            this.Context.FirstTestApplyButtonCounters.Add(model);
+            this.Context.SaveChanges();
+        }
+
+        public void AddBotCounter(int modelClickCount)
+        {
+            BotButtonCounter model = new BotButtonCounter()
+            {
+                ClickCount = modelClickCount
+            };
+
+            this.Context.BotButtonCounters.Add(model);
+            this.Context.SaveChanges();
         }
     }
 }

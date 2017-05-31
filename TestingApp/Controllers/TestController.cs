@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TestingApp.Models;
 using TestingApp.Models.BindingModels;
 using TestingApp.Services;
 
@@ -56,31 +57,98 @@ namespace TestingApp.Controllers
                 return this.RedirectToAction("Style4");
             }
 
+            if (this.firstTestService.Calculator() == "again")
+            {
+                return View();
+            }
+
             return this.RedirectToAction("Index");
         }
 
+        //Styles
+        const string clickCountSessionKey = "clickCount";
+        //Style 1
         [HttpGet]
         public ActionResult Style1()
         {
-            return View();
+            var model = new ApplyButtonCounter() { ClickCount = 0 };
+            var previousClickCount = Session[clickCountSessionKey];
+            if (previousClickCount != null)
+            {
+                model.ClickCount = (int)previousClickCount;
+            }
+            return View(model);
         }
 
+        [HttpPost]
+        public ActionResult Style1(ApplyButtonCounter model)
+        {
+            model.ClickCount++;
+            this.firstTestService.AddCounter(model.ClickCount);
+            Session[clickCountSessionKey] = model.ClickCount;
+            return View(model);
+        }
+        //Style2
         [HttpGet]
         public ActionResult Style2()
         {
-            return View();
+            var model = new ApplyButtonCounter() { ClickCount = 0 };
+            var previousClickCount = Session[clickCountSessionKey];
+            if (previousClickCount != null)
+            {
+                model.ClickCount = (int)previousClickCount;
+            }
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult Style2(ApplyButtonCounter model)
+        {
+            model.ClickCount++;
+            this.firstTestService.AddCounter(model.ClickCount);
+            Session[clickCountSessionKey] = model.ClickCount;
+            return View(model);
         }
 
+        //Style 3
         [HttpGet]
         public ActionResult Style3()
         {
-            return View();
+            var model = new ApplyButtonCounter() { ClickCount = 0 };
+            var previousClickCount = Session[clickCountSessionKey];
+            if (previousClickCount != null)
+            {
+                model.ClickCount = (int)previousClickCount;
+            }
+            return View(model);
         }
 
+        [HttpPost]
+        public ActionResult Style3(ApplyButtonCounter model)
+        {
+            model.ClickCount++;
+            this.firstTestService.AddCounter(model.ClickCount);
+            Session[clickCountSessionKey] = model.ClickCount;
+            return View(model);
+        }
+        //Style 4
         [HttpGet]
         public ActionResult Style4()
         {
-            return View();
+            var model = new ApplyButtonCounter() { ClickCount = 0 };
+            var previousClickCount = Session[clickCountSessionKey];
+            if (previousClickCount != null)
+            {
+                model.ClickCount = (int)previousClickCount;
+            }
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult Style4(ApplyButtonCounter model)
+        {
+            model.ClickCount++;
+            this.firstTestService.AddCounter(model.ClickCount);
+            Session[clickCountSessionKey] = model.ClickCount;
+            return View(model);
         }
 
         [HttpGet]
@@ -88,5 +156,7 @@ namespace TestingApp.Controllers
         {
             return View();
         }
+
+      
     }
 }

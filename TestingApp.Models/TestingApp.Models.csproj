@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplyButtonCounter.cs" />
     <Compile Include="BindingModels\FirstTestBM.cs" />
+    <Compile Include="BotButtonCounter.cs" />
     <Compile Include="FirstTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -131,6 +131,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BotController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
@@ -188,6 +189,7 @@
     <Content Include="template\img\demo-screen-1.jpg" />
     <Content Include="template\img\google-play-badge.svg" />
     <Content Include="template\img\idea.png" />
+    <Content Include="template\img\maxresdefault.jpg" />
     <Content Include="template\img\people.png" />
     <Content Include="template\img\proces.jpg" />
     <Content Include="template\index.html" />
@@ -364,6 +366,8 @@
     <Content Include="Views\Test\Style3.cshtml" />
     <Content Include="Views\Test\Style4.cshtml" />
     <Content Include="Views\Test\Error.cshtml" />
+    <Content Include="Views\Bot\Index.cshtml" />
+    <Content Include="Views\Bot\Bot.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestingApp.Models\TestingApp.Models.csproj">
@@ -381,6 +385,7 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

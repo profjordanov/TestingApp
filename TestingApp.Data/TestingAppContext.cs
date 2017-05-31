@@ -15,6 +15,11 @@ namespace TestingApp.Data
         }
 
         public virtual DbSet<FirstTest> FirstTests { get; set; }
+
+        public virtual DbSet<ApplyButtonCounter> FirstTestApplyButtonCounters { get; set; }
+
+        public virtual DbSet<BotButtonCounter> BotButtonCounters { get; set; }
+
     }
 
 
