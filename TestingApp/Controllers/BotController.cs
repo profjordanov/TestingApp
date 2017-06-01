@@ -17,26 +17,18 @@ namespace TestingApp.Controllers
             this.firstTestService = new FirstTestService();
         }
 
-        const string clickCountSessionKey = "clickCount";
-
         [HttpGet]
         public ActionResult Index()
         {
-            var model = new BotButtonCounter() {ClickCount = 0};
-            var previousClickCount = Session[clickCountSessionKey];
-            if (previousClickCount != null)
-            {
-                model.ClickCount = (int) previousClickCount;
-            }
+            var model = new BotButtonCounter();
             return View(model);
         }
 
         [HttpPost]
         public ActionResult Index(BotButtonCounter model)
         {
-            model.ClickCount++;
+            model.ClickCount = 1;
             this.firstTestService.AddBotCounter(model.ClickCount);
-            Session[clickCountSessionKey] = model.ClickCount;
             return View(model);
         }
 

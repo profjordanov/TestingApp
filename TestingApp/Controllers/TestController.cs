@@ -71,41 +71,29 @@ namespace TestingApp.Controllers
         [HttpGet]
         public ActionResult Style1()
         {
-            var model = new ApplyButtonCounter() { ClickCount = 0 };
-            var previousClickCount = Session[clickCountSessionKey];
-            if (previousClickCount != null)
-            {
-                model.ClickCount = (int)previousClickCount;
-            }
+            var model = new ApplyButtonCounter();
             return View(model);
         }
 
         [HttpPost]
         public ActionResult Style1(ApplyButtonCounter model)
         {
-            model.ClickCount++;
+            model.ClickCount = 1;
             this.firstTestService.AddCounter(model.ClickCount);
-            Session[clickCountSessionKey] = model.ClickCount;
             return View(model);
         }
         //Style2
         [HttpGet]
         public ActionResult Style2()
         {
-            var model = new ApplyButtonCounter() { ClickCount = 0 };
-            var previousClickCount = Session[clickCountSessionKey];
-            if (previousClickCount != null)
-            {
-                model.ClickCount = (int)previousClickCount;
-            }
+            var model = new ApplyButtonCounter();
             return View(model);
         }
         [HttpPost]
         public ActionResult Style2(ApplyButtonCounter model)
         {
-            model.ClickCount++;
+            model.ClickCount = 1;
             this.firstTestService.AddCounter(model.ClickCount);
-            Session[clickCountSessionKey] = model.ClickCount;
             return View(model);
         }
 
@@ -113,41 +101,29 @@ namespace TestingApp.Controllers
         [HttpGet]
         public ActionResult Style3()
         {
-            var model = new ApplyButtonCounter() { ClickCount = 0 };
-            var previousClickCount = Session[clickCountSessionKey];
-            if (previousClickCount != null)
-            {
-                model.ClickCount = (int)previousClickCount;
-            }
+            var model = new ApplyButtonCounter();
             return View(model);
         }
 
         [HttpPost]
         public ActionResult Style3(ApplyButtonCounter model)
         {
-            model.ClickCount++;
+            model.ClickCount = 1;
             this.firstTestService.AddCounter(model.ClickCount);
-            Session[clickCountSessionKey] = model.ClickCount;
             return View(model);
         }
         //Style 4
         [HttpGet]
         public ActionResult Style4()
         {
-            var model = new ApplyButtonCounter() { ClickCount = 0 };
-            var previousClickCount = Session[clickCountSessionKey];
-            if (previousClickCount != null)
-            {
-                model.ClickCount = (int)previousClickCount;
-            }
+            var model = new ApplyButtonCounter();
             return View(model);
         }
         [HttpPost]
         public ActionResult Style4(ApplyButtonCounter model)
         {
-            model.ClickCount++;
+            model.ClickCount = 1;
             this.firstTestService.AddCounter(model.ClickCount);
-            Session[clickCountSessionKey] = model.ClickCount;
             return View(model);
         }
 
