@@ -204,6 +204,9 @@
     <Content Include="template\img\maxresdefault.jpg" />
     <Content Include="template\img\people.png" />
     <Content Include="template\img\proces.jpg" />
+    <Content Include="template\img\shutterstock_217421512.jpg" />
+    <Content Include="template\img\shutterstock_368887307.jpg" />
+    <Content Include="template\img\shutterstock_551937754.jpg" />
     <Content Include="template\index.html" />
     <Content Include="template\js\new-age.js" />
     <Content Include="template\js\new-age.min.js" />
