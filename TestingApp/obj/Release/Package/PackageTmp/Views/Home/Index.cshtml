@@ -1,11 +1,31 @@
 ﻿<header>
     <div class="container">
-        <div class="row">
+       <div class="row">
             <div class="col-sm-7">
                 <div class="header-content">
                     <div class="header-content-inner">
-                        <h3 style="font-family: Times New Roman";>Добре дошъл в нашето приложение, което ще ти помогне бързо и лесно да откриеш твоите силни страни с помощта на нашия тест за кариерна ориентация. Разбери и кои са подходящите за теб позиции спoред твоя профил и кандидатствай за тях!</h3>
-                        @Html.ActionLink("Направи своя тест сега!","Index","Test", new object { },new { @class = "btn btn-outline btn-xl" })
+                        <img src="~/template/img/shutterstock_368887307.jpg" class="img-thumbnail" height="150" width="200" />
+                        <img src="~/template/img/shutterstock_217421512.jpg" class="img-thumbnail" height="150" width="200" />
+                        <img src="~/template/img/shutterstock_551937754.jpg" class="img-thumbnail" height="150" width="200" />
+                        <h3 style="font-family: Cambria" ;>
+                            Добре дошъл в <strong>My Next Generation</strong> , което създадохме специално за теб!
+                            <br />
+                            Знаем, че в началото на  кариера си  човек се
+                            чувства неуверен и има нужда от подкрепа, затова ние сме тук
+                            да ти помогнем!
+                            <br/>
+                            Как ?!
+                            <br/>
+                            Като  направиш  теста ни  за кариерна ориентация,за
+                            да разбереш какъв профил си и да кандидатсваш за позиции свързани с него.
+                            И тъй като знаем колко е важно човек да е спокоен по време на интервюто за работа,
+                            за да може да покаже своя потенциал, тук можеш да тестваш своите умения с чатбота ни.
+                        </h3>
+
+                        @Html.ActionLink("Направи своя тест сега!", "Index", "Test", new object {}, new {@class = "btn btn-warning btn-xl"})
+                        @Html.ActionLink("Направи пробно интервю!", "Index", "Bot", new object {}, new {@class = "btn btn-warning btn-xl"})
+
+
                     </div>
                 </div>
             </div>
@@ -16,6 +36,7 @@
                             <div class="screen">
                                 <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
                                 <img src="~/template/img/demo-screen-1.jpg" class="img-responsive" alt="sda" />
+
                             </div>
                             <div class="button">
                                 <!-- You can hook the "home button" to some JavaScript events or just remove it -->
