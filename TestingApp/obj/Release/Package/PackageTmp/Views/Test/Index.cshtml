@@ -3,7 +3,9 @@
 <div class="container">
 <div class="alert alert-warning alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <strong>Инструкции за попълване на теста:</strong>  Моля, изберете и оградете от всяка двойка твърдения това, което е по-близко до Вас като личност. Ако прецените, че и двете възможности Ви допадът може да ги изберете или може да пропуснете и двете. Няма грешни отговори.
+    <strong>Instructions:</strong>   Please select from each pair of attributes the one which is most
+typical of your personality. No pair is an either-or proposal. Make your choice as
+spontaneously as possible. There are no wrong answers.
 </div>
 @using (Html.BeginForm("Index", "Test", FormMethod.Post))
 {
@@ -14,14 +16,14 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest1")
                 </span>
-                <label class="form-control control-label col-xs-1">Обичам действието.</label>
+                <label class="form-control control-label col-xs-1" style="font-size: smaller;"> I like action.</label>
             </div>
             <br/>
             <div class="input-group">
                 <span class="input-group-addon">
                     @Html.CheckBox("quest2")
                 </span>
-                <label class="form-control control-label col-sm-2" style="font-size: x-small;">Справям се с проблемите по систематичен начин.</label>
+                <label class="form-control control-label col-sm-2" style="font-size: smaller;">I deal with problems in a systematic way.</label>
             </div>
             <br/>
         </div>
@@ -36,14 +38,14 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest3")
                 </span>
-                <label class="form-control" style="font-size: x-small;">Вярвам, че отборите са по-ефективни от отделния човек.</label>
+                <label class="form-control" style="font-size: smaller;">I believe that teams are more effective than individuals.</label>
             </div>
             <br/>
             <div class="input-group">
                 <span class="input-group-addon">
                     @Html.CheckBox("quest4")
                 </span>
-                <label class="form-control">Иновациите ми доставят удоволствие.</label>
+                <label class="form-control" style="font-size: smaller;">I enjoy innovation very much.</label>
             </div>
             <br/>
         </div>
@@ -58,14 +60,14 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest5")
                 </span>
-                <label class="form-control" style="font-size: x-small;">Интересувам се повече от бъдещето, отколкото от миналото.</label>
+                <label class="form-control" style="font-size: smaller;">I am more interested in the future than in the past.</label>
             </div>
             <br/>
             <div class="input-group">
                 <span class="input-group-addon">
                     @Html.CheckBox("quest6")
                 </span>
-                <label class="form-control">Обичам да работя с хора.</label>
+                <label class="form-control" style="font-size: smaller;">I enjoy working with people.</label>
             </div>
             <br/>
         </div>
@@ -81,8 +83,8 @@
                     <!--<input type="checkbox" aria-label="Отговор" name="quest7" id="quest7">-->
                     @Html.CheckBox("quest7")
                 </span>
-                <label class="form-control"  style="font-size: x-small;">
-                    Обичам да се включвам в добре организирани групови срещи.
+                <label class="form-control"  style="font-size: smaller;">
+                    I like to attend well-organized group meetings.
                 </label>
             </div>
             <br/>
@@ -90,7 +92,7 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest8")
                 </span>
-                <label class="form-control" style="font-size: x-small;">Крайните срокове са важни за мен.</label>
+                <label class="form-control" style="font-size: smaller;">Deadlines are important for me.</label>
             </div>
             <br/>
         </div>
@@ -106,14 +108,14 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest9")
                 </span>
-                <label class="form-control" style="font-size: x-small;">Не мога да понасям да се отлагат нещата.</label>
+                <label class="form-control" style="font-size: smaller;">I cannot stand procrastination.</label>
             </div>
             <br/>
             <div class="input-group">
                 <span class="input-group-addon">
                     @Html.CheckBox("quest10")
                 </span>
-                <label class="form-control" style="font-size: x-small;">Вярвам, че новите идеи трябва да бъдат тествани преди да се приложат</label>
+                <label class="form-control" style="font-size: smaller;"> I believe that new ideas have to be tested before being used.</label>
             </div>
             <br/>
         </div>
@@ -121,7 +123,7 @@
     <br/>
 
     <hr/>
-
+ 
     <div class="row">
         <div class="col-lg-6">
             <h3 class="glyphicon glyphicon-pencil"></h3>
@@ -129,14 +131,14 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest11")
                 </span>
-                <label class="form-control"  style="font-size: x-small;">Обичам интелектуалното предизвикателство от общуването с другите.</label>
+                <label class="form-control"  style="font-size: smaller;">I enjoy the stimulation of interaction with others.</label>
             </div>
             <br/>
             <div class="input-group">
                 <span class="input-group-addon">
                     @Html.CheckBox("quest12")
                 </span>
-                <label class="form-control">Винаги търся нови възможности.</label>
+                <label class="form-control" style="font-size: smaller;"> I am always looking for new possibilities.</label>
             </div>
             <br/>
         </div>
@@ -152,14 +154,14 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest13")
                 </span>
-                <label class="form-control">Искам да си поставям собствени цели.</label>
+                <label class="form-control" style="font-size: smaller;">I want to set up my own objectives.</label>
             </div>
             <br/>
             <div class="input-group">
                 <span class="input-group-addon">
                     @Html.CheckBox("quest14")
                 </span>
-                <label class="form-control" style="font-size: x-small;">Когато стартирам нещо, го довършвам до край.</label>
+                <label class="form-control" style="font-size: smaller;">When I start something, I go through until the end.</label>
             </div>
             <br/>
         </div>
@@ -175,8 +177,8 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest15")
                 </span>
-                <label class="form-control"  style="font-size: x-small;">
-                    Обикновено се опитвам да разбера емоциите на другите хора.
+                <label class="form-control"  style="font-size: smaller;">
+                    I basically try to understand other people’s emotions.
                 </label>
             </div>
             <br/>
@@ -184,7 +186,7 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest16")
                 </span>
-                <label class="form-control">Предизвиквам хората около мен.</label>
+                <label class="form-control" style="font-size: smaller;"> I do challenge people around me.</label>
             </div>
             <br/>
         </div>
@@ -200,14 +202,14 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest17")
                 </span>
-                <label class="form-control"  style="font-size: x-small;">Очаквам с нетърпение да получа обратна връзка за своето представяне.</label>
+                <label class="form-control"  style="font-size: smaller;">I look forward to receiving feedback on my performance.</label>
             </div>
             <br/>
             <div class="input-group">
                 <span class="input-group-addon">
                     @Html.CheckBox("quest18")
                 </span>
-                <label class="form-control"  style="font-size: x-small;">Намирам „стъпка по стъпка” подхода за много ефективен.</label>
+                <label class="form-control"  style="font-size: smaller;">I find the step-by-step approach very effective.</label>
             </div>
             <br/>
         </div>
@@ -223,728 +225,728 @@
                 <span class="input-group-addon">
                     @Html.CheckBox("quest19")
                 </span>
-                <label class="form-control"  style="font-size: x-small;">Мисля, че съм добър/добра в изучаването на хората. </label>
+                <label class="form-control"  style="font-size: smaller;">I think I am good at reading people. </label>
             </div>
             <br/>
             <div class="input-group">
                 <span class="input-group-addon">
                     @Html.CheckBox("quest20")
                 </span>
-                <label class="form-control"  style="font-size: x-small;">Обичам креативните начини за разрешаване на проблеми.</label>
+                <label class="form-control"  style="font-size: smaller;">I like creative problem solving.</label>
             </div>
             <br/>
         </div>
     </div>
     <br/>
+    @*
+        <hr/>
 
-    <hr/>
-
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest21")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Аз правя заключения въз основа на частични данни и правя планове. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest21")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Аз правя заключения въз основа на частични данни и правя планове. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest22")
+                    </span>
+                    <label class="form-control">Усещам нуждите на другите.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest22")
-                </span>
-                <label class="form-control">Усещам нуждите на другите.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest23")
-                </span>
-                <label class="form-control">Планирането е ключът към успеха. </label>
+        <hr/>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest23")
+                    </span>
+                    <label class="form-control">Планирането е ключът към успеха. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest24")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Ставам нетърпелив/а при дълги обсъждания</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest24")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Ставам нетърпелив/а при дълги обсъждания</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest25")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Оставам спокоен/спокойна под напрежение. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest25")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Оставам спокоен/спокойна под напрежение. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest26")
+                    </span>
+                    <label class="form-control">Много ценя опита. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest26")
-                </span>
-                <label class="form-control">Много ценя опита. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest27")
-                </span>
-                <label class="form-control">Слушам хората. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest27")
+                    </span>
+                    <label class="form-control">Слушам хората. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest28")
+                    </span>
+                    <label class="form-control">Хората казват, че мисля бързо </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest28")
-                </span>
-                <label class="form-control">Хората казват, че мисля бързо </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest29")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Сътрудничеството е ключова дума за мен. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest29")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Сътрудничеството е ключова дума за мен. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest30")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Използвам логически модели да тествам алтернативи. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest30")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Използвам логически модели да тествам алтернативи. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest31")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Обичам да се занимавам с няколко проекта наведнъж </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest31")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Обичам да се занимавам с няколко проекта наведнъж </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest32")
+                    </span>
+                    <label class="form-control">Винаги си задавам въпроси. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest32")
-                </span>
-                <label class="form-control">Винаги си задавам въпроси. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest33")
-                </span>
-                <label class="form-control">Уча се чрез правене. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest33")
+                    </span>
+                    <label class="form-control">Уча се чрез правене. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest34")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Вярвам, че главата ми управлява сърцето. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest34")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Вярвам, че главата ми управлява сърцето. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest35")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Мога да предвидя как другите ще реагират на определени действия.</label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest35")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Мога да предвидя как другите ще реагират на определени действия.</label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest36")
+                    </span>
+                    <label class="form-control">Не обичам детайлите. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest36")
-                </span>
-                <label class="form-control">Не обичам детайлите. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest37")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Анализът винаги трябва да предшества действията.</label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest37")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Анализът винаги трябва да предшества действията.</label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest38")
+                    </span>
+                    <label class="form-control">Умея да оценя климата в групата. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest38")
-                </span>
-                <label class="form-control">Умея да оценя климата в групата. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest39")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Имам склонност да започвам неща и да не ги довършвам.</label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest39")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Имам склонност да започвам неща и да не ги довършвам.</label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest40")
+                    </span>
+                    <label class="form-control">Възприемам се като решителен човек. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest40")
-                </span>
-                <label class="form-control">Възприемам се като решителен човек. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest41")
-                </span>
-                <label class="form-control">Търся предизвикателни задачи</label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest41")
+                    </span>
+                    <label class="form-control">Търся предизвикателни задачи</label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest42")
+                    </span>
+                    <label class="form-control">Разчитам на наблюдения и данни. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest42")
-                </span>
-                <label class="form-control">Разчитам на наблюдения и данни. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest43")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Мога да изразявам чувствата си свободно.</label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest43")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Мога да изразявам чувствата си свободно.</label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest44")
+                    </span>
+                    <label class="form-control">Обичам да измислям нови проекти. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest44")
-                </span>
-                <label class="form-control">Обичам да измислям нови проекти. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest45")
-                </span>
-                <label class="form-control">Много обичам да чета.</label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest45")
+                    </span>
+                    <label class="form-control">Много обичам да чета.</label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest46")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Възприемам се като човек, който подпомага комуникацията.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest46")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Възприемам се като човек, който подпомага комуникацията.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest47")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Обичам да се фокусирам върху едно нещо в даден момент. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest47")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Обичам да се фокусирам върху едно нещо в даден момент. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest48")
+                    </span>
+                    <label class="form-control">Обичам да постигам.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest48")
-                </span>
-                <label class="form-control">Обичам да постигам.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest49")
-                </span>
-                <label class="form-control">Обичам да научавам за другите. </label>
+        <hr/>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest49")
+                    </span>
+                    <label class="form-control">Обичам да научавам за другите. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest50")
+                    </span>
+                    <label class="form-control">Обичам разнообразието. </label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest50")
-                </span>
-                <label class="form-control">Обичам разнообразието. </label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest51")
-                </span>
-                <label class="form-control">Фактите говорят сами за себе си. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest51")
+                    </span>
+                    <label class="form-control">Фактите говорят сами за себе си. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest52")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Използвам въображението си колкото се може повече.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest52")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Използвам въображението си колкото се може повече.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest53")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Ставам нетърпелив/а когато има дълги и бавни задачи. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest53")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Ставам нетърпелив/а когато има дълги и бавни задачи. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest54")
+                    </span>
+                    <label class="form-control">Умът ми никога не спира да работи.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest54")
-                </span>
-                <label class="form-control">Умът ми никога не спира да работи.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest55")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Ключови решения трябва да се вземат внимателно. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest55")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Ключови решения трябва да се вземат внимателно. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest56")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;"> Силно вярвам, че хората се нуждаят един от друг, за да се свърши работата.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest56")
-                </span>
-                <label class="form-control"  style="font-size: x-small;"> Силно вярвам, че хората се нуждаят един от друг, за да се свърши работата.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest57")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Обикновено вземам решения без да мисля твърде много. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest57")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Обикновено вземам решения без да мисля твърде много. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest58")
+                    </span>
+                    <label class="form-control"> Емоциите създават проблеми.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest58")
-                </span>
-                <label class="form-control"> Емоциите създават проблеми.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest59")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Обичам да бъда харесван/а от другите. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest59")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Обичам да бъда харесван/а от другите. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest60")
+                    </span>
+                    <label class="form-control"> Мога да събера две и две много бързо.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest60")
-                </span>
-                <label class="form-control"> Мога да събера две и две много бързо.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest61")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Изпробвам своите нови идеи върху хората. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest61")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Изпробвам своите нови идеи върху хората. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest62")
+                    </span>
+                    <label class="form-control"> Вярвам в научния подход.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest62")
-                </span>
-                <label class="form-control"> Вярвам в научния подход.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest63")
-                </span>
-                <label class="form-control">Обичам да завършвам нещата. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest63")
+                    </span>
+                    <label class="form-control">Обичам да завършвам нещата. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest64")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;"> Добрите отношения са от съществено значение.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest64")
-                </span>
-                <label class="form-control"  style="font-size: x-small;"> Добрите отношения са от съществено значение.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest65")
-                </span>
-                <label class="form-control">Импулсивен/на съм. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest65")
+                    </span>
+                    <label class="form-control">Импулсивен/на съм. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest66")
+                    </span>
+                    <label class="form-control"> Приемам различията у хората.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest66")
-                </span>
-                <label class="form-control"> Приемам различията у хората.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest67")
-                </span>
-                <label class="form-control">Да комуникирам с хората е самоцел. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest67")
+                    </span>
+                    <label class="form-control">Да комуникирам с хората е самоцел. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest68")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Обичам интелектуалните предизвикателства.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest68")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Обичам интелектуалните предизвикателства.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest69")
-                </span>
-                <label class="form-control">Обичам да организирам.</label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest69")
+                    </span>
+                    <label class="form-control">Обичам да организирам.</label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest70")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Обикновено прескачам от една идея на друга.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest70")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Обикновено прескачам от една идея на друга.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest71")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Да говориш и работиш с хора е изкуство. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest71")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Да говориш и работиш с хора е изкуство. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest72")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Себереализацията е ключова дума за мен.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest72")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Себереализацията е ключова дума за мен.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest73")
-                </span>
-                <label class="form-control">Обичам да се заигравам с нови идеи. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest73")
+                    </span>
+                    <label class="form-control">Обичам да се заигравам с нови идеи. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest74")
+                    </span>
+                    <label class="form-control">Не обичам да си губя времето.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest74")
-                </span>
-                <label class="form-control">Не обичам да си губя времето.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest75")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Обичам да правя това, в което съм добър/добра. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest75")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Обичам да правя това, в което съм добър/добра. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest76")
+                    </span>
+                    <label class="form-control">Уча се докато комуникирам с другите.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest76")
-                </span>
-                <label class="form-control">Уча се докато комуникирам с другите.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest77")
-                </span>
-                <label class="form-control"  style="font-size: x-small;">Намирам абстракциите за интересни и приятни. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest77")
+                    </span>
+                    <label class="form-control"  style="font-size: x-small;">Намирам абстракциите за интересни и приятни. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest78")
+                    </span>
+                    <label class="form-control">Търпелив/а съм с детайлите.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest78")
-                </span>
-                <label class="form-control">Търпелив/а съм с детайлите.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
 
-    <hr/>
+        <hr/>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <h3 class="glyphicon glyphicon-pencil"></h3>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest79")
-                </span>
-                <label class="form-control">Харесвам кратки и точни изказвания. </label>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="glyphicon glyphicon-pencil"></h3>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest79")
+                    </span>
+                    <label class="form-control">Харесвам кратки и точни изказвания. </label>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        @Html.CheckBox("quest80")
+                    </span>
+                    <label class="form-control">Чувствам се уверен/а в себе си.</label>
+                </div>
+                <br/>
             </div>
-            <br/>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    @Html.CheckBox("quest80")
-                </span>
-                <label class="form-control">Чувствам се уверен/а в себе си.</label>
-            </div>
-            <br/>
         </div>
-    </div>
-    <br/>
+        <br/>
+    *@
+            <hr/>
 
-    <hr/>
+            <input type="submit" class="btn btn-lg btn-primary" value="Result"/>
 
-    <input type="submit" class="btn btn-lg btn-primary" value="Резултат"/>
+            <div class="glyphicon glyphicon-thumbs-up"></div>
+        }
+        </div>
+        </div>
+        </section>
 
-    <div class="glyphicon glyphicon-thumbs-up"></div>
-}
-</div>
-</div>
-</section>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-100483737-1', 'auto');
+          ga('send', 'pageview');
 
-  ga('create', 'UA-100483737-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+        </script>
