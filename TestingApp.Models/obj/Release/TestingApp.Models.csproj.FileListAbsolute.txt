@@ -1,5 +1,0 @@
-C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\bin\Release\TestingApp.Models.dll
-C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\bin\Release\TestingApp.Models.pdb
-C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\obj\Release\TestingApp.Models.csprojResolveAssemblyReference.cache
-C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\obj\Release\TestingApp.Models.dll
-C:\Users\Jordan\Documents\GitHub\TestingApp\TestingApp.Models\obj\Release\TestingApp.Models.pdb
