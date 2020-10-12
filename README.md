@@ -1,1 +1,1 @@
-# SoGe Young Prototype
+# Prototype
